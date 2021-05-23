@@ -1,19 +1,38 @@
-#include <cstdio>
+#include <iostream>
+using namespace std;
+int main()
+{
+ int length;
+ int l1;
+ int w1;
+ int width;
+ int a1;
+ int a2;
+ cout<<"enter length :";
+ cin>>length;
+ cout<<"enter length 2 :";
+ cin>>l1;
+ cout<<"enter width :";
+ cin>>width;
+ cout<<"enter width 2 :";
+ cin>>w1;
+ 
+ 
+ a1=width*length;
 
-int main( void ) {
-   int x1, y1, x2, y2, x3, y3;
-   
-   scanf( "%d%d", &x1, &y1 );
-   scanf( "%d%d", &x2, &y2 );
-   scanf( "%d%d", &x3, &y3 );
+ a2=w1*l1;
+ 
+ 
+ if(a1>a2)
+ {
+ cout<<"area 1 is greater than 2 :"<<a1<<endl;
+ 
+ }
+ else if(a2>a1)
+ {
+ cout<<"area 2 is greater than 1 :"<<a2<<endl;
+ } 
 
-   if( x1 == x2 ) printf( "%d ", x3 );
-   if( x1 == x3 ) printf( "%d ", x2 );
-   if( x2 == x3 ) printf( "%d ", x1 );
-
-   if( y1 == y2 ) printf( "%d\n", y3 );
-   if( y1 == y3 ) printf( "%d\n", y2 );
-   if( y2 == y3 ) printf( "%d\n", y1 );
-
-   return 0;
+ else
+ cout<<"areas are equal :"<<a2<<endl;
 }
